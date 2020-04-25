@@ -25,9 +25,9 @@ const Post = props => {
           src={props.post.imageUrl}
         />
       </div>
-      <LikeSection />
+      <LikeSection likes={props.post.likes} timestamp={props.post.timestamp}/>
       <CommentSection
-        postId={props.post.imageUrl}
+        postId={props.imageUrl}
         comments={props.post.comments}
       />
     </div>
