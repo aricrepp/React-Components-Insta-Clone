@@ -20,7 +20,7 @@ const [state, setState] = useState(false);
         <div className="like-section-wrapper">
           <FontAwesomeIcon onClick={() => {
             setState(previousState => !previousState);
-            props.onChange(!state);
+            
           }} className={state === true ? "active" : "inactive"} 
           icon={faHeart} />
         </div>
@@ -31,7 +31,7 @@ const [state, setState] = useState(false);
           {props.timestamp}
         </div>
       </div>
-        <p className="like-number">{props.likes} Likes</p>
+        <p className="like-number">{state === true ? props.likes + 1 : props.likes} Likes</p>
     </div>
   )
 };
