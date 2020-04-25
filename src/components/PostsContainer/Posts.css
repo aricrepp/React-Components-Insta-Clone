@@ -4,7 +4,7 @@
   min-width: 400px;
   margin: 5px auto;
 }
-.post-header{
+.post-header {
   display: flex;
   align-items: center;
 }
@@ -53,4 +53,20 @@
   width: 100px;
   margin: 15px 0px;
   font-size: 16px;
+}
+
+.like-time {
+  width: 100%;
+  font-size: 14px;
+  text-align: end;
+  align-self: center;
+  padding-right: 10px;
+}
+
+.active {
+  color: red;
+}
+
+.inactive {
+  color: black;
 }
